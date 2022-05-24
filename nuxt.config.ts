@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/content',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
@@ -9,7 +10,10 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
-    viteNode: true,
+    viteNode: false,
+  },
+  content: {
+
   },
   unocss: {
     preflight: true,
@@ -17,4 +21,8 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  components: [{
+    path: '~/components',
+    pathPrefix: false,
+  }],
 })
