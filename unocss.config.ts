@@ -34,4 +34,13 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  theme: {
+    colors: {
+      dark: {
+        body: '#000000',
+        surface: '#16171D',
+        highlight: '#3D4051',
+      },
+    },
+  },
 })
