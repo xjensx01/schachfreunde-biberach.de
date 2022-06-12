@@ -10,11 +10,14 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
-    ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
-    ['pill', 'w-50px h-26px flex justify-center items-center rounded-2xl transition-colors duration-300'],
-  ],
+  shortcuts: {
+    'bg-body': 'bg-light-body dark:bg-dark-body',
+    'bg-surface': 'bg-light-surface dark:bg-dark-surface',
+    'bg-highlight': 'bg-light-highlight dark:bg-dark-highlight',
+    'btn': 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
+    'icon-btn': 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600',
+    'pill': 'w-50px h-26px flex justify-center items-center rounded-2xl transition-colors duration-300',
+  },
   presets: [
     presetUno(),
     presetAttributify(),
@@ -36,10 +39,15 @@ export default defineConfig({
   ],
   theme: {
     colors: {
+      light: {
+        body: '#ffffff',
+        surface: '#d5e1eb',
+        highlight: '#0e283c',
+      },
       dark: {
         body: '#000000',
-        surface: '#16171D',
-        highlight: '#3D4051',
+        surface: '#16171d',
+        highlight: '#3d4051',
       },
     },
   },
