@@ -5180,7 +5180,7 @@ packages:
       ufo: 0.8.4
       unenv: 0.5.2
       unimport: 0.2.9_qrpxjnto46iodaa4efitqiw3he
-      unstorage: 0.5.0
+      unstorage: 0.5.1
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -7519,8 +7519,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /unstorage/0.5.0:
-    resolution: {integrity: sha512-DFLe2rwY6T3G/dUAvcsBMQu+L+j2aKNiE+D2b3giHVwQAqp3KZHVMoswhX+SDc9GK1+yoWZaC0MxpZFhrINawA==}
+  /unstorage/0.5.1:
+    resolution: {integrity: sha512-K6FGEeZrECiVieo5hysFXCBd6HKmu1RFQczbf5j0DcbxQgK66zeJCL+cc2F2zgqhGuW5K52nI0F5HFd8zuuZtA==}
     dependencies:
       anymatch: 3.1.2
       chokidar: 3.5.3
