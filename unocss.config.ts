@@ -11,6 +11,10 @@ import {
 
 export default defineConfig({
   shortcuts: {
+    'muted': 'opacity-80',
+    'text-primary': 'text-light-primary dark:text-dark-primary',
+    'text-default': 'text-light-default dark:text-dark-default',
+    'text-inverse': 'text-light-inverse dark:text-dark-inverse',
     'bg-body': 'bg-light-body dark:bg-dark-body',
     'bg-surface': 'bg-light-surface dark:bg-dark-surface',
     'bg-highlight': 'bg-light-highlight dark:bg-dark-highlight',
@@ -43,11 +47,17 @@ export default defineConfig({
         body: '#ffffff',
         surface: '#d5e1eb',
         highlight: '#0e283c',
+        primary: '#ffffff',
+        default: '#0e273c',
+        inverse: '#ffffff',
       },
       dark: {
         body: '#000000',
         surface: '#16171d',
         highlight: '#3d4051',
+        primary: '#dee1f8',
+        default: '#ffffff',
+        inverse: '#000000',
       },
     },
   },

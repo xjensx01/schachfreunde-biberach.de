@@ -22,8 +22,11 @@ html, body , #__nuxt{
   padding: 0;
 }
 
+html {
+}
+
 html.dark {
-  @apply bg-body;
+  @apply bg-dark-body;
   color: white;
 }
 </style>
