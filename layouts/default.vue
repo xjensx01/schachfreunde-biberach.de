@@ -6,5 +6,5 @@
       [Default Layout]
     </div>
   </main>
-  <NavigationBar />
+  <Navbar />
 </template>
