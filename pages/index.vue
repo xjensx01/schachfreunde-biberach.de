@@ -1,4 +1,6 @@
 <template>
-  <Search mb-8 />
-  <BlogList />
+  <div>
+    <Search mb-8 />
+    <BlogList />
+  </div>
 </template>

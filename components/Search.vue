@@ -7,10 +7,3 @@
     <input type="text" placeholder="Suche" w-full bg-transparent outline-none>
   </label>
 </template>
-
-<style scoped>
-input::before {
-  content: "🔍";
-  margin-right: 0.5rem;
-}
-</style>
