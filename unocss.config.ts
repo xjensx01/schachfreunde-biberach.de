@@ -31,7 +31,7 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: 'Roboto',
+        sans: 'Roboto Flex',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
       },

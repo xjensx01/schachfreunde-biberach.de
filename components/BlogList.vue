@@ -4,6 +4,9 @@
 
 <template>
   <div>
+    <h2 font-black text-lg>
+      Aktuelle Beiträge
+    </h2>
     <ContentList path="/blog">
       <template #default="{ list }">
         <div v-for="article in list" :key="article._path">

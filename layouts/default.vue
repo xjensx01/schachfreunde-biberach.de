@@ -3,7 +3,7 @@
     <span muted>Schachfreunde</span><br>
     <span font-medium>Heilbronn-Biberach</span>
   </header>
-  <main class="px-4 py-12 text-center">
+  <main class="px-4 py-12">
     <slot />
     <Footer />
   </main>
