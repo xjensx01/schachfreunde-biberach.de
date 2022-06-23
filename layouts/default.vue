@@ -1,5 +1,5 @@
 <template>
-  <header text-2xl text-center mt-20 text-default>
+  <header text-2xl text-center mt-12 text-default>
     <span muted>Schachfreunde</span><br>
     <span font-medium>Heilbronn-Biberach</span>
   </header>
