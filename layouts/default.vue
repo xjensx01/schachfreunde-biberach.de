@@ -1,10 +1,11 @@
 <template>
+  <header text-2xl text-center mt-20 text-default>
+    <span muted>Schachfreunde</span><br>
+    <span font-medium>Heilbronn-Biberach</span>
+  </header>
   <main class="py-20 px-10 text-center">
     <slot />
     <Footer />
-    <div class="mt-5 mx-auto text-center opacity-25 text-sm">
-      [Default Layout]
-    </div>
   </main>
   <Navbar />
 </template>
