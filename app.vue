@@ -21,7 +21,8 @@ html, body , #__nuxt{
   padding: 0;
 }
 
-html {
+body {
+  @apply font-sans;
 }
 
 html.dark {
