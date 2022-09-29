@@ -1,3 +1,7 @@
 <template>
-  Teams
+  <div>
+    <NuxtLayout>
+      Teams
+    </NuxtLayout>
+  </div>
 </template>

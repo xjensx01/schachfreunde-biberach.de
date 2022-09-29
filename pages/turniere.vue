@@ -1,3 +1,7 @@
 <template>
-  Turniere
+  <div>
+    <NuxtLayout>
+      Turniere
+    </NuxtLayout>
+  </div>
 </template>

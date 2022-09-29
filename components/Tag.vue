@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink :to="`/articles/${title}`">
+  <NuxtLink :to="`/blog/${title}`">
     {{ title }}
   </NuxtLink>
 </template>

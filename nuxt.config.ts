@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
@@ -13,7 +11,23 @@ export default defineNuxtConfig({
     viteNode: false,
   },
   content: {
-
+    documentDriven: {
+      layoutFallbacks: ['theme'],
+      globals: {
+        theme: {
+          where: [
+            {
+              _id: 'content:_theme.yml',
+            },
+          ],
+          without: ['_'],
+        },
+      },
+      injectPage: true,
+      navigation: true,
+      page: true,
+      surround: true,
+    },
   },
   unocss: {
     preflight: true,

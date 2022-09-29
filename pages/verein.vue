@@ -1,3 +1,7 @@
 <template>
-  Verein
+  <div>
+    <NuxtLayout>
+      Verein
+    </NuxtLayout>
+  </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Search mb-8 />
-    <BlogList />
+    <NuxtLayout>
+      <Search mb-8 />
+      <BlogList />
+    </NuxtLayout>
   </div>
 </template>
