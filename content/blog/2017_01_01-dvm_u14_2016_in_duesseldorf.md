@@ -1,7 +1,7 @@
 ---
-title: DVM U14 2016 in Düsseldorf
 description: Alljährlich finden zwischen Weihnachten und Neujahr die Deutschen Vereins-Mannschaftsmeisterschaften (DVM) der Jugend statt. Unser kleiner Verein nimmt in diesem Jahr schon zum 6. Mal daran teil und schickt in 2016 erstmalig eine etwas ältere Jungenmannschaft - die U14 - an den Start.
 category: Jugend
+author: Dimitrios Triantafillidis
 createdAt: 2017-01-01
 ---
 
