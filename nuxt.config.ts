@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/blog', '/teams', '/turniere', '/verein'],
+      routes: ['/blog/*', '/teams', '/turniere', '/verein'],
     },
   },
   unocss: {
