@@ -1,10 +1,12 @@
 <script setup lang="ts">
 const search = useSearch()
-const query = ref()
+const query = ref(await queryData())
 
-watchEffect(async () => {
-  query.value = await queryContent('blog').where({ $or: [{ title: { $icontains: search.input } }, { description: { $contains: search.input } }] }).find()
-})
+watch(search, async () => query.value = await queryData())
+
+function queryData() {
+  return queryContent('blog').where({ $or: [{ title: { $icontains: search.input } }, { description: { $contains: search.input } }] }).only(['_path', 'title', 'description']).find()
+}
 </script>
 
 <template>
@@ -14,11 +16,12 @@ watchEffect(async () => {
     </h2>
     <div v-for="article in query" :key="article._path">
       <NuxtLink :to="article._path">
-        <h2 text-xl font-bold>
+        <h3 text-xl font-bold>
           {{ article.title }}
-        </h2>
+        </h3>
       </NuxtLink>
       <p>{{ article.description }}</p>
     </div>
   </div>
 </template>
+
