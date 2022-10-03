@@ -29,6 +29,11 @@ export default defineNuxtConfig({
       surround: true,
     },
   },
+  nitro: {
+    prerender: {
+      routes: ['/blog', '/teams', '/turniere', '/verein'],
+    },
+  },
   unocss: {
     preflight: true,
   },
