@@ -1,6 +1,11 @@
 <script setup lang="ts">
 const search = useSearch()
-const query = ref(await queryData())
+const query = ref()
+
+if (search.query)
+  query.value = search.query
+else
+  query.value = search.query = await queryData()
 
 watch(search, async () => query.value = await queryData())
 
