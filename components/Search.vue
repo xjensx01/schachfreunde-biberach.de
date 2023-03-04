@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const search = useSearch()
+// const search = useSearch()
 const input = ref('')
 
 let debounce = null as NodeJS.Timeout | null
@@ -9,7 +9,7 @@ function debounceSearch() {
     clearTimeout(debounce)
 
   debounce = setTimeout(() => {
-    search.input = input.value
+    // search.input = input.value
   }, 300)
 }
 
@@ -17,7 +17,7 @@ function triggerSearch() {
   if (debounce !== null)
     clearTimeout(debounce)
 
-  search.input = input.value
+  // search.input = input.value
 }
 </script>
 
