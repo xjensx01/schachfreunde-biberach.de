@@ -1,15 +1,15 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
+// import { acceptHMRUpdate, defineStore } from 'pinia'
 
-export const useSearch = defineStore('search', () => {
-  const input = ref('')
-  const query = ref()
+// export const useSearch = defineStore('search', () => {
+//   const input = ref('')
+//   const query = ref()
 
-  return {
-    input,
-    query,
-  }
-})
+//   return {
+//     input,
+//     query,
+//   }
+// })
 
-if (import.meta.hot)
-  import.meta.hot.accept(acceptHMRUpdate(useSearch, import.meta.hot))
+// if (import.meta.hot)
+//   import.meta.hot.accept(acceptHMRUpdate(useSearch, import.meta.hot))
 
